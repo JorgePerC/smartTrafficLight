@@ -4,6 +4,12 @@ import requests
 import json
 import keyboard
 
+# TODO: Actually detect ambulance sound
+# https://towardsdatascience.com/hands-on-signal-processing-with-python-9bda8aad39de
+# https://stackoverflow.com/questions/35344649/reading-input-sound-signal-using-python
+# https://www.worldresearchlibrary.org/up_proc/pdf/1803-153578318109-14.pdf
+
+
 def makeUrl(dir, rpiIP = '192.168.1.80', serverPort = '5001'):
     return "http://" + rpiIP + ":" + serverPort + dir
 
